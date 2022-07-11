@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./media/align-justify-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="container-lg container-sm">
+            <div class="loading-content text-center">
+                <h2 class="text-center">Chargement du portfolio</h2>
+                <div class="spinner-grow" role="status">
+                </div>
+                <div class="spinner-grow" role="status">
+                </div>
+                <div class="spinner-grow" role="status">
+                </div>
+                <div class="spinner-grow" role="status">
+                </div>
+                <div class="spinner-grow" role="status">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-expand-lg">
+        <div class="container-fluid container-lg">
+            <a class="navbar-brand" href="#">Théo GILLET | Développeur en formation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sections
+                        </a>
+                        <div class="dropdown-menu" id="sections-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#presentation"><i class="fa-solid fa-user-tie fa-lg"></i>
+                                Présentation</a>
+                            <a class="dropdown-item" href="#degrees"><i class="fa-solid fa-graduation-cap"></i>
+                                Parcours pro/scolaire</a>
+                            <a class="dropdown-item" href="#skills"><i class="fa-solid fa-bolt fa-lg"></i>
+                                Compétences</a>
+                            <a class="dropdown-item" href="#projects"><i class="fa-solid fa-diagram-project"></i>
+                                Projets</a>
+                            <a href="#hobbies" class="dropdown-item"><i class="fa-solid fa-lg fa-face-grin-wide"></i>
+                                Loisirs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" target="_blank" href="https://www.linkedin.com/in/theogillet/"><i
+                                class="fa-brands fa-lg fa-linkedin"></i> LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" target="_blank" href="https://github.com/LLEGIT"><i
+                                class="fa-brands fa-lg fa-github"></i> GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" target="_blank"
+                            href="https://1drv.ms/b/s!ApgZV7BxAM_QnxPNvDmmI8DM09X4" id="download-resume"><i
+                                class="fa-solid fa-download"></i> Télécharger mon CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" target="_blank" href="mailto:theogillet.bordeaux@outlook.com"><i
+                                class="fa-solid fa-envelope"></i> Me contacter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="dark-theme" href="#"><i class="fa-solid fa-circle"></i>
+                            <span>Thème sombre</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Presentation -->
+    <div class="container-lg container-fluid">
+        <hr>
+        <section id="presentation" class="row">
+            <div class="col-lg-4 col-md-3 col-sm-2">
+                <img id="pic_of_me" src="./media/pic_of_me.png" alt="Picture of myself" class="img-fluid" />
+            </div>
+            <div class="col-lg-8 col-md-9 col-sm-10">
+                <p><strong>En recherche d'emploi: Non</strong></p>
+                <p class="intro-text">
+                    Bonjour, je m'appelle Théo et j'ai 21 ans. Passionné par l'informatique depuis le collège, je
+                    considère ce domaine à la fois comme un divertissement mais également un outil de créativité infini.
+                    Je fus d'abord attiré par le côté "hardware" de l'informatique (montage pc) et les
+                    jeux-vidéo.<br>
+                    Au début de l'année 2021, j'ai découvert le monde de la programmation et cela m'a
+                    tout de suite plu. Afin de devenir développeur, je suis actuellement la formation BAC+2 <strong><a
+                            id="wac_link" target="_blank" href="https://www.webacademie.org/">web@cadémie à Epitech
+                            Lille</a></strong>. Celle-ci se divise en deux parties: la première année est en
+                    formation initiale à l'école à contrario de la deuxième qui se déroule en alternance
+                    en entreprise. J'ai comme objectif de continuer mes études de développeur après cette formation,
+                    afin d'obtenir un bac+5 dans le domaine.<br>
+                    Je pense légèrement préférer le front-end au back-end. Cependant, je m'intéresse autant aux deux
+                    côtés d'une application pour en comprendre son fonctionnement dans sa globalité.</p>
+                <p>Je suis impliqué, ponctuel, travailleur et ouvert au travail d'équipe.</p>
+            </div>
+        </section>
+    </div>
+    <!-- Experiences -->
+    <div class="container-fluid container-lg">
+        <hr>
+        <section id="degrees" class="row">
+            <div class="col-lg-12 col-sm-12">
+                <h3><i class="fa-solid fa-lg fa-user-graduate"></i> Mon parcours professionnel et scolaire</h3>
+            </div>
+            <div class="timeline">
+                <div class="event-timeline left">
+                    <div class="content">
+                        <h4>Juillet 2019</h4>
+                        <p><strong>Bac ES mention bien section européenne</strong><br> (Lycée Sud Médoc/La Boétie)</p>
+                    </div>
+                </div>
+                <div class="event-timeline right">
+                    <div class="content">
+                        <h4>Septembre 2019 - Décembre 2020</h4>
+                        <p><strong>Licence langues étrangères appliquées parcours anglais-espagnol</strong><br>
+                            (Université
+                            Bordeaux Montaigne)</p>
+                    </div>
+                </div>
+                <div class="event-timeline left">
+                    <div class="content">
+                        <h4>Mars 2021</h4>
+                        <p><strong>Stage d'observation maintenance produits Apple</strong><br>Durée: 2 semaines<br>
+                            (iConcept Pessac)</p>
+                    </div>
+                </div>
+                <div class="event-timeline right">
+                    <div class="content">
+                        <h4>Mai 2021</h4>
+                        <p><strong>Diplôme Sauveteur secouriste du travail (SST)</strong><br> (AFPA Pessac)</p>
+                    </div>
+                </div>
+                <div class="event-timeline left">
+                    <div class="content">
+                        <h4>Novembre 2021 - Novembre 2023</h4>
+                        <p><strong>Formation développeur web</strong><br>
+                            (web@cadémie Epitech Lille)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid container-lg">
+        <hr>
+        <section class="row" id="projects">
+            <h3><i class="fa-solid fa-lg fa-diagram-project"></i> Mes projets</h3>
+        </section>
+        <div class="row projects-row">
+            <div class="col-lg-3 col-md-4 col-xs-12">
+                <div class="card">
+                    <img class="card-img-top img-project" src="./media/screen_twitter.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fake social network</h5>
+                        <hr>
+                        <p class="card-text">Projet en PHP, Ajax/Jquery, HTML/CSS visant à réaliser un fake de twitter
+                            et
+                            reprendre quelques unes de
+                            ses fonctionnalités.</p>
+                            <br>
+
+                        <a href="https://github.com/LLEGIT/fake_social_network" target="_blank"
+                            class="btn btn-warning">Repo
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-lg-3 col-md-4 col-xs-12">
+                <div class="card">
+                    <img class="card-img-top img-project" src="./media/screenshot_spotify.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fake Spotify</h5>
+                        <hr>
+                        <p class="card-text">Projet en React/Node JS reprenant le principe d'un site d'écoute de
+                            musique.
+                        </p>
+                        <br>
+                        <a href="https://github.com/LLEGIT/fake_spotify" target="_blank" class="btn btn-warning">Repo
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-lg-3 col-md-4 col-xs-12">
+                <div class="card">
+                    <img class="card-img-top img-project" src="./media/screenshot_math_training.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Math Training</h5>
+                        <hr>
+                        <p class="card-text">Script php pour s'entraîner aux calculs arithmétiques, avec une difficulté
+                            exponentielle.
+                        </p>
+                        <br>
+                        <a href="https://github.com/LLEGIT/math_training" target="_blank" class="btn btn-warning">Repo
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- My skills -->
+    <div class="container-fluid container-lg">
+        <hr>
+        <section id="skills" class="row">
+            <div class="col-lg-12 col-sm-12">
+                <h3><i class="fa-solid fa-lg fa-screwdriver-wrench"></i> Mes compétences</h3>
+            </div>
+        </section>
+        <div class="skills-content">
+            <section class="row">
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-5x fa-language"></i>
+                    <span>Anglais (C1)</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-ubuntu"></i>
+                    <span>Ubuntu</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-html5"></i>
+                    <span>Html</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-css3-alt"></i>
+                    <span>Css</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-node"></i>
+                    <span>Node</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-react"></i>
+                    <span>React js/native</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-php"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-5x fa-database"></i>
+                    <span>MySQL/MongoDB</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-laravel"></i>
+                    <span>Laravel</span>
+                </div>
+                <div class="skill col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-brands fa-5x fa-symfony"></i>
+                    <span>Symfony</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- My hobbies -->
+    <div class="container-fluid container-lg">
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <h3><i class="fa-solid fa-lg fa-face-grin-wide"></i> Mes loisirs</h3>
+            </div>
+        </div>
+        <div class="hobbies-content">
+            <section id="hobbies" class="row">
+                <div class="hobby col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-4x fa-baseball"></i>
+                    <span>Tennis</span>
+                </div>
+                <div class="hobby col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-4x fa-person-biking"></i>
+                    <span>Cyclisme</span>
+                </div>
+                <div class="hobby col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-4x fa-person-running"></i>
+                    <span>Jogging</span>
+                </div>
+                <div class="hobby col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-4x fa-gamepad"></i>
+                    <span>Jeux-vidéo</span>
+                </div>
+                <div class="hobby col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-4x fa-person-hiking"></i>
+                    <span>Randonnée</span>
+                </div>
+                <div class="hobby col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                    <i class="fa-solid fa-4x fa-book"></i>
+                    <span>Lecture</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="container-fluid container-lg">
+        <hr>
+        <div class="row">
+            <h3>Envoyer un message</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <form action="https://formsubmit.co/theogillet.bordeaux@outlook.com" name="_honey" method="POST"
+                    id="contact-form">
+                    <div class="form-group">
+                        <label for="email">Votre email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea class="form-control" name="message" id="message" cols="20" rows="10"></textarea>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6 col-xs-12">
+                <iframe id="footer-gif" src="https://giphy.com/embed/LGzrggUppEBdm" width="480" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ee7d3f24fb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
