@@ -8,6 +8,10 @@
 
 /* Loading page */ 
 
+a:hover {
+    font-size: larger;
+}
+
 .preloader {
     background-color: white;
     width: 100%;
@@ -17,10 +21,13 @@
 }
 
 .loading-content {
-    position: fixed;
-    right: 40%;
-    bottom: 50%;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
 
 @keyframes lds-hourglass {
     0% {
@@ -210,29 +217,51 @@
 /* My projects */
 .img-project {
     align-self: center;
-    width: 90%;
+    width: 100%;
     height: 45%;
     max-height: 45%;
 }
 
+.card-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
 .card {
     background: none;
+    border-radius: 10px;
     height: 100%;
-    border: none;
 }
 
-.card a {
-    position: absolute;
-    bottom: 10px;
+.card:hover {
+    cursor: pointer;
+    opacity: 90%;
+    border: 3px solid black;
 }
+
 
 @media screen and (max-width: 1200px) {
+    .card-container {
+        padding: 1% 5% 1%;
+    } 
+
     .loading-content {
         right: 30%;
     }
 }
 
+@media screen and (max-width: 800px) {
+    .card-container {
+        padding: 10% 15% 10%;
+    } 
+}
+
 @media screen and (max-width: 600px) {
+
+    .event-timeline::after {
+        background-color: black;
+    }
 
     .loading-content {
         right: 5%;
