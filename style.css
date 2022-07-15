@@ -273,9 +273,8 @@ a:hover {
     margin: 2% 10% 2%;
 }
 
-#contact-form div {
-    margin-top: px;
-    margin-bottom: 7px;
+label {
+    width: 100%;
 }
 
 #footer-gif {
